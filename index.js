@@ -12,12 +12,12 @@ class productManager {
     addProduct(title, description, price, thumbnail, stock) {
         const product = {
           id: this.#idGenerator(),
-          title,
-          description,
-          price,
+          title: title,
+          description: description,
+          price: price,
           code: this.#codeGenerator(),
-          thumbnail,
-          stock,
+          thumbnail: thumbnail,
+          stock: stock, 
         }
          this.products.push(product)
 
@@ -73,5 +73,5 @@ class productManager {
 }
 
 const manager = new productManager ()
-manager.addProduct('titulo', 'descripcion', '30')
+manager.addProduct('titulo', 'descripcion', '30', '5')
 console.log(manager);
