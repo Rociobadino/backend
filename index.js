@@ -19,7 +19,7 @@ class productManager {
           thumbnail: thumbnail,
           stock: stock, 
         }
-         this.products.push(product)
+        //  this.products.push(product)
 
         try {
             if (!title || !description || !price || !thumbnail || !stock) {
@@ -73,5 +73,7 @@ class productManager {
 }
 
 const manager = new productManager ()
-manager.addProduct('titulo', 'descripcion', '30', '5')
-console.log(manager);
+manager.addProduct('titulo', 'descripcion', '30', 'ruta1','10')
+manager.addProduct('titulo1', 'descripcion1', '60', 'ruta2','100')
+console.log(manager.getProducts());
+console.log(manager.getProductById('2'));
