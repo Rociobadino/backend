@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1
+    },
+    {
+        "id": 2,
+        "nombre": "mochila",
+        "stock": "1"
+    },
+    {
+        "id": 3,
+        "nombre": "mochila",
+        "stock": "1"
+    },
+    {
+        "id": 4,
+        "nombre": "mochila",
+        "stock": "1"
+    },
+    {
+        "id": 5,
+        "nombre": "buzo",
+        "stock": "5"
+    },
+    {
+        "id": 6,
+        "nombre": "buzo",
+        "stock": "5"
+    },
+    {
+        "id": 7,
+        "nombre": "mochila",
+        "stock": "5"
+    },
+    {
+        "id": 8,
+        "nombre": "buzo",
+        "stock": "5"
+    },
+    {
+        "id": 9,
+        "title": "cartuchera",
+        "description": "rosa con brillos",
+        "price": "80",
+        "code": "236gb73",
+        "thumbnail": "link",
+        "stock": "5"
+    }
+]
