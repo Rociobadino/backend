@@ -39,11 +39,29 @@
     },
     {
         "id": 9,
-        "title": "cartuchera",
+        "title": "buzo",
         "description": "rosa con brillos",
         "price": "80",
         "code": "236gb73",
         "thumbnail": "link",
         "stock": "5"
+    },
+    {
+        "id": 10,
+        "title": "mochila",
+        "description": "verde",
+        "price": "50",
+        "code": "23673",
+        "thumbnail": "link",
+        "stock": "3"
+    },
+    {
+        "id": 11,
+        "title": "mochila",
+        "description": "verde",
+        "price": "50",
+        "code": "23673",
+        "thumbnail": "link",
+        "stock": "3"
     }
 ]

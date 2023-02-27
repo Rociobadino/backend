@@ -1,9 +1,13 @@
+
+const fs = require('fs');
+
 class productManager {
 
-    constructor(){
-        this.products = []
 
+    constructor(path) {
+        this.path = path;
     }
+
     getProducts() {
         return this.products
 
@@ -63,4 +67,5 @@ manager.addProduct('titulo', 'descripcion', '30', 'ruta1','10')
 manager.addProduct('titulo1', 'descripcion1', '60', 'ruta2','100')
 console.log(manager.getProducts());
 console.log(manager.getProductById(2));
+
 

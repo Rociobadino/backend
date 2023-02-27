@@ -6,13 +6,12 @@ class ProductManager {
         this.path = path;
     }
 
-
     addProduct = async (product) => {
         const products = await this.getProducts()
         const id = this.#generarID(products)
         const newProduct = ({id,...product})
         products.push(newProduct)
-        await fs.promises.writeFile (this.path, JSON.stringify(products))
+        await fs.promises.writeFile (this.path, JSON.stringify(products,null,4))
         return newProduct
 
     }
@@ -53,7 +52,7 @@ class ProductManager {
     eliminarProductsById = async (id) => {
         const products = await this.getProducts()
         const arrayProductsNuevos = products.filter(p => p.id !== id)
-        await fs.promises.writeFile(this.path, JSON.stringify(arrayProductsNuevos))
+        await fs.promises.writeFile(this.path, JSON.stringify(arrayProductsNuevos,null,4))
     }
 
     updateProducts = async (id,obj) =>{
@@ -64,7 +63,7 @@ class ProductManager {
         }
         const productUpdate = {...products[indexProducts],...obj}
         products.splice(indexProducts,1,productUpdate)
-        await fs.promises.writeFile(this.path,JSON.stringify(products))
+        await fs.promises.writeFile(this.path,JSON.stringify(products,null,4))
 
     }
 
@@ -104,10 +103,10 @@ const product2 ={
 async function prueba (){
 const manager = new ProductManager('Products.json')
 const products = await manager.getProducts()
-// await manager.addProduct(product2)
+//await manager.addProduct(product1)
 console.log(products)
-// await manager.updateProducts(9,{price:'4'})
-await manager.eliminarProductsById(5)
+await manager.updateProducts(9,{title: 'buzo'})
+// await manager.eliminarProductsById(12)
 }
 
 
